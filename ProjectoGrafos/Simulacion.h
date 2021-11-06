@@ -1,14 +1,30 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "Grafo.h"
+#include "Boton.h"
 using namespace sf;
 using namespace std;
-enum estados_submenu { SBMN_INACTIVO = 0, SBMN_SUBMENU };
+enum estados_submenu { SBMN_INACTIVO = 0, MENU_PRINCIPAL, SBMN_SUBMENU, SBMN_SIMULACION };
 class Simulacion
 {
 private:
+
+	Grafo *grafo;
 	RenderWindow* ventana;
+	Texture* imagen;
 	Sprite* sprite;
-	CircleShape shape;
+
+	Font* font;
+	Text titulo;
+	float centro;
+	RectangleShape rectangle;
+
+	short unsigned estadoSubmenu; // unsigned es para no aceptar negativos
+
+	Boton* btnNuevaSimulacion;
+	Boton* btnSalir;
+
+	//CircleShape shape;
 public:
 	Simulacion();
 	void dibujarVentana();
