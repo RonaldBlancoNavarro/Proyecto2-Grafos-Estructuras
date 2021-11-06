@@ -145,7 +145,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Sokoban\Sokoban\Boton.cpp" />
+    <ClCompile Include="Arista.cpp" />
+    <ClCompile Include="Grafo.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Simulacion.cpp" />
+    <ClCompile Include="Vertice.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sokoban\Sokoban\Boton.h" />
+    <ClInclude Include="Arista.h" />
+    <ClInclude Include="Grafo.h" />
+    <ClInclude Include="Simulacion.h" />
+    <ClInclude Include="Vertice.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

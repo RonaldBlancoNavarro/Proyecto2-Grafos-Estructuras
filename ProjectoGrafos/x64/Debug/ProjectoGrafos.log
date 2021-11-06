@@ -1,2 +1,4 @@
-﻿  main.cpp
-  ProjectoGrafos.vcxproj -> D:\Escritorio\Proyecto2-Grafos-Estructuras\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe
+﻿  Simulacion.cpp
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\ProjectoGrafos\Simulacion.cpp(55,100): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\ProjectoGrafos\Simulacion.cpp(55,65): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  ProjectoGrafos.vcxproj -> C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe
