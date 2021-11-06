@@ -1,7 +1,9 @@
 ﻿  Simulacion.cpp
-D:\Escritorio\Proyecto2-Grafos-Estructuras\ProjectoGrafos\Simulacion.cpp(19,35): warning C4244: '=': conversión de 'T' a 'float'; posible pérdida de datos
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\ProjectoGrafos\Simulacion.cpp(18,32): warning C4244: '=': conversión de 'T' a 'float'; posible pérdida de datos
           with
           [
               T=unsigned int
           ]
-  ProjectoGrafos.vcxproj -> D:\Escritorio\Proyecto2-Grafos-Estructuras\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe
+  main.cpp
+  Generando código...
+  ProjectoGrafos.vcxproj -> C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe

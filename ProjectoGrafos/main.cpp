@@ -1,4 +1,4 @@
-﻿#include <SFML/Graphics.hpp>
+﻿        #include <SFML/Graphics.hpp>
 #include "Simulacion.h"
 #include<iostream>
 #include<vector>

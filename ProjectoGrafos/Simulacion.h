@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Grafo.h"
 #include "Boton.h"
+#include <vector>
 using namespace sf;
 using namespace std;
 enum estados_submenu { SBMN_INACTIVO = 0, MENU_PRINCIPAL, SBMN_SUBMENU, SBMN_SIMULACION };
@@ -17,8 +18,12 @@ private:
 	Font* font;
 	Text titulo;
 	float centro;
-	RectangleShape rectangle;
 
+	RectangleShape rectangle;
+	CircleShape* vertice;
+	vector<CircleShape> lts;
+	vector<vector<Vector2f>> lineas;
+	vector<Vector2f> pos;
 	short unsigned estadoSubmenu; // unsigned es para no aceptar negativos
 
 	Boton* btnNuevaSimulacion;
@@ -31,5 +36,8 @@ public:
 	void mostrarVentana();
 	void graficar();
 	void procesarEventos();
+	void graficarLineasAndPuntos();
+	void agregarLinea();
+	void agregarVertice(Vector2f);
 };
 
