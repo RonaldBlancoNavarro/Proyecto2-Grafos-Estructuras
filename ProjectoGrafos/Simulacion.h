@@ -24,6 +24,11 @@ private:
 	vector<CircleShape> lts;
 	vector<vector<Vector2f>> lineas;
 	vector<Vector2f> pos;
+	
+	Text* pesoArista;
+	bool permisoDigitar;
+	vector<Text> pesosAristas;
+
 	short unsigned estadoSubmenu; // unsigned es para no aceptar negativos
 
 	Boton* btnNuevaSimulacion;
@@ -39,5 +44,6 @@ public:
 	void graficarLineasAndPuntos();
 	void agregarLinea();
 	void agregarVertice(Vector2f);
+	void modificarPesoArista(Event event);
 };
 
