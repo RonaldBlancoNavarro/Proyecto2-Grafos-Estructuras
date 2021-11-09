@@ -156,7 +156,7 @@ void Simulacion::agregarLinea() {
 		lineas.push_back(pos);
 		//pos.clear();
 
-		permisoDigitar = true; // creacion de tecto de peso Arista
+		permisoDigitar = true; // creacion de texto de peso Arista
 		pesoArista = new Text();
 		pesoArista->setFont(*font);
 		pesoArista->setString("0");
@@ -166,6 +166,14 @@ void Simulacion::agregarLinea() {
 
 		pos.clear();
 
+	}
+	if (pos.size() == 1 && permisoDigitar == true ) { // en caso de no colocar peso a la arista
+		if (pesoArista->getString().getSize() == 0) { // si va vacia de peso la arista
+			pesoArista->setString("0");
+		}
+		permisoDigitar = false; // dejar de escribir
+		pesosAristas.push_back(*pesoArista); // agregar el peso de la arista
+		pesoArista = new Text();
 	}
 }
 
