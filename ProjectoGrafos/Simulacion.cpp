@@ -163,12 +163,18 @@ void Simulacion::agregarLinea() {
 		pesoArista->setCharacterSize(20);
 		pesoArista->setFillColor(Color::Black);
 		pesoArista->setPosition( pos[0].x + ((pos[1].x - pos[0].x)/2), pos[0].y + ((pos[1].y - pos[0].y) / 2));
-
 		pos.clear();
+	}
 
+	if (pos.size() == 1 && permisoDigitar == true) { // en caso de no colocar peso a la arista
+		if (pesoArista->getString().getSize() == 0) { // si va vacia de peso la arista
+			pesoArista->setString("1");
+		}
+		permisoDigitar = false; // dejar de escribir
+		pesosAristas.push_back(*pesoArista); // agregar el peso de la arista
+		pesoArista = new Text();
 	}
 }
-
 
 void Simulacion::modificarPesoArista(Event event) {
 
@@ -182,7 +188,6 @@ void Simulacion::modificarPesoArista(Event event) {
 			string palabra = pesoArista->getString();
 			size_t tam = palabra.length(); //obtenemos el tamaño del string
 			palabra.erase(tam - 1);
-
 			pesoArista->setString(palabra);
 		}
 	}

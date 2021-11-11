@@ -17,6 +17,5 @@ public:
 
 	vector <Vertice>* getVertices();
 	vector <vector <Arista>>* getMatriz();
-
 };
 

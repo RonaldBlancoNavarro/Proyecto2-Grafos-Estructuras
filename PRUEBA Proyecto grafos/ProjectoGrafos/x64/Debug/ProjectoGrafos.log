@@ -1,0 +1,8 @@
+﻿  Simulacion.cpp
+C:\Users\keine\Desktop\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(18,32): warning C4244: '=': conversión de 'T' a 'float'; posible pérdida de datos
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\keine\Desktop\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(168,41): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  ProjectoGrafos.vcxproj -> C:\Users\keine\Desktop\PRUEBA Proyecto grafos\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe
