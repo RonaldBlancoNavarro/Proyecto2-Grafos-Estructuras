@@ -19,6 +19,7 @@ Arista::Arista(int p, vector<Vector2f> pos) {
 }
 void Arista::setPeso(int p) {
     peso = p;
+	texto.setString(std::to_string(p));
 }
 
 int Arista::getPeso() {
@@ -39,6 +40,8 @@ vector<Vector2f> Arista::getXY() {
 
 void Arista::setTexto(Text t) {
 	texto = t;
+	string num = t.getString();
+	peso = stoi(num);
 }
 
 Text Arista::getTexto() {

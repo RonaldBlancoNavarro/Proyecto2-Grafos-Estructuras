@@ -25,6 +25,11 @@ void Grafo::setVector(vector<Arista> v) {
 void Grafo::setPeso(int i, int j, int peso) {
 	matriz[i][j].setPeso(peso);
 }
+
+void Grafo::setTexto(int i, int j, Text t) {
+	matriz[i][j].setTexto(t);
+}
+
 vector <Vertice> Grafo::getVertices() {
 	return vertices;
 }

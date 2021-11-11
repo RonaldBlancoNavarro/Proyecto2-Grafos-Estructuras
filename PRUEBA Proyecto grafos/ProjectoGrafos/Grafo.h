@@ -18,6 +18,7 @@ public:
 	void setAristaPos(int, Arista);
 	void setVector(vector<Arista>);
 	void setPeso(int, int, int);
+	void setTexto(int, int, Text);
 	vector <Vertice> getVertices();
 	Vertice getVertice(int);
 	vector <vector <Arista>> getMatriz();
