@@ -34,7 +34,7 @@ Simulacion::Simulacion() {
 
 
 	permisoDigitar = false;
-	//pesoArista = new Text();
+	pesoArista = new Text();
 
 	//shape.setRadius(10);
 	//shape.setFillColor(Color::Red);
@@ -168,9 +168,8 @@ void Simulacion::agregarVertice(Vector2f posMouse) {
 	int letra = grafo->getVertices().size();
 	c += letra;
 	string t = string(1, c);
-	vertice = new Vertice(t, posMouse, 0);
+	vertice = new Vertice(t, posMouse, grafo->getVertices().size());
 	grafo->setVertice(*vertice);
-
 }
 
 void Simulacion::agregarLinea() {
@@ -180,18 +179,39 @@ void Simulacion::agregarLinea() {
 		Arista aux(0, v);
 
 		vector <Arista> vec;
-		for (int i = 0;i < grafo->getMatriz().size();i++) {
+		if (grafo->getMatriz().size() == 0) {
 			Arista ar(0, v);
 			vec.push_back(ar);
+			vec.push_back(*new Arista(2, pos));
+			grafo->setVector(vec);
+			int aux = vec[1].getPeso();
+			vec[0].setPeso(aux);
+			vec[1].setPeso(0);
+			grafo->setVector(vec);
 		}
+		else {
+			vec.clear();
+			for (size_t i = 0; i < grafo->getMatriz().size(); i++)
+			{
+				for (size_t j = 0; j < 2; j++)
+					grafo->setAristaPos(i, *new Arista(0, v));				
+			}
+			for (size_t i = 0; i < grafo->getVertices().size(); i++)			
+				vec.push_back(*new Arista(0, pos));
 
-		Arista ar2(2, pos);
-		vec.push_back(ar2);
-		grafo->setVector(vec);
-		for (int i = 0; i < grafo->getMatriz().size(); i++)
+			auxIJ.x = grafo->getVertices().size() - 1;
+			auxIJ.y = grafo->getVertices().size() - 2;
+			grafo->setVector(vec);	
+			vec[vec.size() - 2].setPeso(3);
+			vec[vec.size() - 1].setPeso(0);
+			grafo->setVector(vec);
+			
+		}
+		
+		/*for (int i = 0; i < grafo->getMatriz().size(); i++)
 		{
 			grafo->setAristaPos(i, aux);
-		}
+		}*/
 		//grafo->getMatriz().push_back(vec);
 		//pos.clear();
 
@@ -203,14 +223,17 @@ void Simulacion::agregarLinea() {
 		pesoArista->setFillColor(Color::Black);
 		pesoArista->setPosition( pos[0].x + ((pos[1].x - pos[0].x)/2), pos[0].y + ((pos[1].y - pos[0].y) / 2));		
 		pos.clear();
+		cout << endl;
+		grafo->setPeso(auxIJ.x, auxIJ.y, 4);
+		grafo->setPeso(auxIJ.y, auxIJ.x, 4);
 		grafo->mostarMatriz();
 	}
 	if (pos.size() == 1 && permisoDigitar == true) { // en caso de no colocar peso a la arista (guardado automatico)
-		if (grafo->getMatriz()[grafo->getMatriz().size() - 1][grafo->getMatriz().size() - 1].getTexto().getString().getSize() == 0) { // si va vacia de peso la arista
+		if (pesoArista == 0) { // si va vacia de peso la arista
 			pesoArista->setString("0");
 		}
 		permisoDigitar = false; // dejar de escribir
-		grafo->getMatriz()[grafo->getMatriz().size() - 1][grafo->getMatriz().size() - 1].setTexto(*pesoArista); // agregar el peso de la arista
+		//grafo->getMatriz()[grafo->getMatriz().size() - 1][grafo->getMatriz().size() - 1].setTexto(*pesoArista); // agregar el peso de la arista
 		pesoArista = new Text();
 	}
 }

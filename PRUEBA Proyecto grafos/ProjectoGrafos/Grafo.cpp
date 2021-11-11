@@ -22,6 +22,9 @@ void Grafo::setVector(vector<Arista> v) {
 	matriz.push_back(v);
 }
 
+void Grafo::setPeso(int i, int j, int peso) {
+	matriz[i][j].setPeso(peso);
+}
 vector <Vertice> Grafo::getVertices() {
 	return vertices;
 }
@@ -39,6 +42,7 @@ void Grafo::mostarMatriz() {
 	{
 		for (int j = 0; j < matriz[i].size(); j++)
 		{
+			cout.width(4);
 			cout << matriz[i][j].getPeso();
 		}
 		cout << endl;

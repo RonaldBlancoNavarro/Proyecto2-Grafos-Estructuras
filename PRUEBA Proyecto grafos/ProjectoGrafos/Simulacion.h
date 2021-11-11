@@ -21,7 +21,7 @@ private:
 	Text titulo;
 	float centro;
 	RectangleShape rectangle;
-
+	Vector2i auxIJ;
 
 	Vertice* vertice; // hay que meter este circulo dentro de la clase vertice y aqui manejas vertices con sus funcionalidades
 	//vector<CircleShape> lts; // vertices

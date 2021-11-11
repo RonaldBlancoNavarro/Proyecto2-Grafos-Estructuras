@@ -1,8 +1,20 @@
 ﻿  Simulacion.cpp
-C:\Users\keine\Desktop\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(18,32): warning C4244: '=': conversión de 'T' a 'float'; posible pérdida de datos
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(18,32): warning C4244: '=': conversión de 'T' a 'float'; posible pérdida de datos
           with
           [
               T=unsigned int
           ]
-C:\Users\keine\Desktop\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(168,41): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-  ProjectoGrafos.vcxproj -> C:\Users\keine\Desktop\PRUEBA Proyecto grafos\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(168,41): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(171,65): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(197,46): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(202,45): warning C4267: '=': conversión de 'size_t' a 'T'; posible pérdida de datos
+          with
+          [
+              T=int
+          ]
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\PRUEBA Proyecto grafos\ProjectoGrafos\Simulacion.cpp(203,45): warning C4267: '=': conversión de 'size_t' a 'T'; posible pérdida de datos
+          with
+          [
+              T=int
+          ]
+  ProjectoGrafos.vcxproj -> C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\PRUEBA Proyecto grafos\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe

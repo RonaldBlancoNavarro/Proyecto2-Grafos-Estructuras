@@ -2,3 +2,4 @@ D:\Escritorio\Proyecto2-Grafos-Estructuras\ProjectoGrafos\x64\Debug\ProjectoGraf
 C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe
 D:\Escritorio\PRUEBA Proyecto grafos\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe
 C:\Users\keine\Desktop\PRUEBA Proyecto grafos\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe
+C:\Users\keine\Documents\GitHub\Proyecto2-Grafos-Estructuras\PRUEBA Proyecto grafos\ProjectoGrafos\x64\Debug\ProjectoGrafos.exe
